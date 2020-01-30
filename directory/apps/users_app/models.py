@@ -14,12 +14,16 @@ class User(db.Model):
 
     @validates('password')
     def validate_password(self, key, value):
+        if value is None:
+            raise ValueError('Password can\'t be null')
         if len(value) < 6:
             raise ValueError('Password should be atleast 6 characters.')
         return generate_password_hash(value)
 
     @validates('username')
     def validate_username(self, key, value):
+        if value is None:
+            raise ValueError('Username can\'t be null')
         if not value.isidentifier():
             raise ValueError('Username is invalid.')
         return value
