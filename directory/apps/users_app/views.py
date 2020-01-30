@@ -23,7 +23,6 @@ def create_user():
         return {'error': f'{e}'}, 400
     except IntegrityError:
         db.session.rollback()
-        # TODO Add status 400
-        return {'error': 'Username is duplicated.'}
+        return {'error': 'Username is duplicated.'}, 400
 
     return {'message': 'Account created successfully'}, 201
