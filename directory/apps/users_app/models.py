@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import validates
-from werkzeug.security import generate_password_hash
+from werkzeug.security import generate_password_hash, check_password_hash
 
 from directory import db
 
@@ -27,3 +27,6 @@ class User(db.Model):
         if not value.isidentifier():
             raise ValueError('Username is invalid.')
         return value
+
+    def check_password(self, password):
+        return check_password_hash(self.password, password)
