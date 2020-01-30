@@ -3,7 +3,8 @@ The second project of my Flask Tuts Series in Persian!
 We are going to develop a ReSTFul Web Directory using Flask, Each episode, has it's own branch
 
 ## Episodes
-0. **Store and Validate Data | [Branch on Github](https://github.com/DarkSuniuM/ReST-Directory/tree/00-Store_and_Validate_Data) | [Video On YouTube](https://youtu.be/iTGYOw2obes)**
+0. Store and Validate Data | [Branch on Github](https://github.com/DarkSuniuM/ReST-Directory/tree/00-Store_and_Validate_Data) | [Video On YouTube](https://youtu.be/iTGYOw2obes)
+0. **Authentication | [Branch on Github](https://github.com/DarkSuniuM/ReST-Directory/tree/01-Authentication) | [Video On YouTube](https://youtu.be/ULht9NjvI9M)**
 
 
 
