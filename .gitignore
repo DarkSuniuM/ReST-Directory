@@ -2,3 +2,5 @@ __pycache__/
 .venv/
 .vscode/
 .env
+directory/static/*
+!directory/static/.gitkeep
