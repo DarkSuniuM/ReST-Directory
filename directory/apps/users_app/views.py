@@ -66,3 +66,22 @@ def get_user():
     identity = get_jwt_identity()
     user = User.query.filter(User.username.ilike(identity)).first()
     return {'username': user.username}
+
+
+@users.route('/', methods=['PATCH'])
+@jwt_required
+@json_only
+def modify_user():
+    args = request.get_json()
+
+    identity = get_jwt_identity()
+    user = User.query.filter(User.username.ilike(identity)).first()
+
+    new_password = args.get('password')
+    try:
+        user.password = new_password
+        db.session.commit()
+    except ValueError as e:
+        db.session.rollback()
+        return {'error': f'{e}'}, 400
+    return {}, 204
