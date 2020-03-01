@@ -1,0 +1,11 @@
+kind: ExternalService
+name: rest-directory
+spec:
+  image: rest_directory:0.2
+  port: 80
+  env:
+    - name: SQLALCHEMY_DATABASE_URI
+      value: mysql+mysqldb://root:${DB_PASSWORD}@rest-dir-db/rest_directory
+    - name: SECRET_KEY
+      value: ${SECRET_KEY}
+  static_path: /static/
