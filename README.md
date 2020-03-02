@@ -6,7 +6,8 @@ We are going to develop a ReSTFul Web Directory using Flask, Each episode, has i
 0. Store and Validate Data | [Branch on Github](https://github.com/DarkSuniuM/ReST-Directory/tree/00-Store_and_Validate_Data) | [Video On YouTube](https://youtu.be/iTGYOw2obes)
 0. Authentication | [Branch on Github](https://github.com/DarkSuniuM/ReST-Directory/tree/01-Authentication) | [Video On YouTube](https://youtu.be/ULht9NjvI9M)
 0. Upload files | [Branch on Github](https://github.com/DarkSuniuM/ReST-Directory/tree/02-Upload_files) | [Video On YouTube](https://youtu.be/Z9vxnfUpiOM)
-0. **Update/Delete Data | [Branch on Github](https://github.com/DarkSuniuM/ReST-Directory/tree/03-Update_Delete_Data) | [Video On YouTube](https://youtu.be/GCRfVOqJpk4)**
+0. Update/Delete Data | [Branch on Github](https://github.com/DarkSuniuM/ReST-Directory/tree/03-Update_Delete_Data) | [Video On YouTube](https://youtu.be/GCRfVOqJpk4)
+0. **Deploy on Fandogh | [Branch on Github](https://github.com/DarkSuniuM/ReST-Directory/tree/04-Deploy_on_Fandogh) | [Video On YouTube](https://youtu.be/wOp_eU43rcQ)**
 
 
 
